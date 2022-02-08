@@ -1,19 +1,7 @@
 # site_clone
 
-## Project setup
-```
-npm install
-```
+- I'm trying to clone my repository on github. Trying to be more igual possible.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Using HTML5, JS and Vue.js.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- First step: Making the 1° header.

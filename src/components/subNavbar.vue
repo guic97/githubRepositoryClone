@@ -91,10 +91,13 @@ export default {
     margin-left: 30px;
   }
   .leftLinks a{
-    color: rgb(0, 132, 255);
+    color: rgb(0, 153, 255);
     font-size: 20px;
     text-decoration: none;
     
+  }
+  .leftLinks a:hover{
+    text-decoration:underline;
   }
   .leftLinks div{
     margin-left: 5px;
@@ -116,6 +119,7 @@ export default {
   }
   .rightButtons div{
     margin-right: 5px;
+    cursor: pointer;
   }
   .rightButtons img{
     margin-right: 5px;
@@ -127,9 +131,14 @@ export default {
     color: blanchedalmond;
     border: 1px solid #444;
   }
+  .button:hover{
+    background-color: rgb(56, 56, 77);
+    border-color: #888;
+  }
   .subNavbar{
     margin-top: 25px;
     margin-left: 30px;
+    cursor: pointer;
   }
   .subNavbar div{
     display: flex;

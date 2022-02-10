@@ -71,10 +71,6 @@ export default {
 </script>
 
 <style scoped>
-  .flexDisplayWrap{
-    display: flex;
-    flex-wrap: wrap;
-  }
   #subnavDiv{ 
     max-height: 400px;
     max-width: 100%;
@@ -138,13 +134,13 @@ export default {
   .subNavbar{
     margin-top: 25px;
     margin-left: 30px;
-    cursor: pointer;
   }
   .subNavbar div{
     display: flex;
     flex-wrap: wrap;
     color:rgb(255, 255, 255, 0.897);
-    padding: 15px 15px; 
+    padding: 15px 15px;
+    cursor: pointer;
   }
   #firstBar{
     border-bottom: 2px solid rgb(248, 89, 89);

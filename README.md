@@ -4,5 +4,6 @@
 
 - Using HTML5, JS and Vue.js.
 
-- First step: Making the 1° header.
+- First step: Making the header.
 - Second step: Making the subnavbar.
+- Third step: Making the footer.

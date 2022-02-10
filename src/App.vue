@@ -1,7 +1,7 @@
 <template>
 <div class="body">
   <div>
-    <navegation/>
+    <site-header/>
   </div>
 
   <div>
@@ -9,44 +9,51 @@
   </div>
 
   <section>
-    <div>
+    <div class="space">
 
     </div>
   </section>
 
   <aside>
-    <div>
+    <div class="space">
 
     </div>
   </aside>
 
   <footer>
-    <div>
-
-    </div>
+    <site-footer/>
   </footer>
 </div>
 </template>
 
 <script>
-import navegation from "./components/navegation.vue";
+import siteHeader from "./components/siteHeader.vue";
 import subNavbar from "./components/subNavbar.vue";
+import siteFooter from "./components/siteFooter.vue";
 export default {
   name: 'App',
   components: {
-   navegation,
+   siteHeader,
    subNavbar,
+   siteFooter,
   }
 }
 </script>
 
 <style>
+  .space{
+    margin-bottom: 300px;
+  }
   *{
     margin: 0px;
     padding: 0px;
     list-style: none;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     font-size: 14px;
+  }
+  .flexDisplayWrap{
+    display: flex;
+    flex-wrap: wrap;
   }
   body{
     background-color: rgb(16, 19, 24);

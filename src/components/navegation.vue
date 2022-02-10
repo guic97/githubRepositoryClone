@@ -52,7 +52,6 @@ export default {
     font-weight: bold;
     display: flex;
     align-items: center;
-    
   }
   a img{
     width: 32px

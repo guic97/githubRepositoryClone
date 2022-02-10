@@ -5,9 +5,7 @@
   </div>
 
   <div>
-    <nav>
-
-    </nav>
+    <sub-navbar/>
   </div>
 
   <section>
@@ -32,10 +30,12 @@
 
 <script>
 import navegation from "./components/navegation.vue";
+import subNavbar from "./components/subNavbar.vue";
 export default {
   name: 'App',
   components: {
    navegation,
+   subNavbar,
   }
 }
 </script>

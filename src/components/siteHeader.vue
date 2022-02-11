@@ -56,6 +56,9 @@ export default {
   a img{
     width: 32px
   }
+  a img:hover{
+    filter:brightness(70%);
+  }
   h1{
     font-size: 25px;
   }

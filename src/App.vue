@@ -9,15 +9,13 @@
   </div>
 
   <section>
-    <div class="space">
+    <div>
 
     </div>
   </section>
 
   <aside>
-    <div class="space">
-
-    </div>
+    <site-aside/>
   </aside>
 
   <footer>
@@ -30,26 +28,27 @@
 import siteHeader from "./components/siteHeader.vue";
 import subNavbar from "./components/subNavbar.vue";
 import siteFooter from "./components/siteFooter.vue";
+import siteAside from "./components/siteAside.vue";
+
 export default {
   name: 'App',
   components: {
    siteHeader,
    subNavbar,
    siteFooter,
+   siteAside,
   }
 }
 </script>
 
 <style>
-  .space{
-    margin-bottom: 300px;
-  }
   *{
     margin: 0px;
     padding: 0px;
     list-style: none;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     font-size: 14px;
+    color: white;
   }
   .flexDisplayWrap{
     display: flex;

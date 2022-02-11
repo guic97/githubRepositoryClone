@@ -40,17 +40,21 @@ export default {
     border-top: 1px solid #333;
   }
   .rightReserved{
-    color:rgba(255, 255, 255, 0.445);
     align-items: center;
   }
   .rightReserved p{
     font-size: 12px;
+    color: rgba(255, 255, 255, 0.466);
   }
   .rightReserved div{
     margin-left: 10px;
   }
   .rightReserved img{
     height: 25px;
+    filter: brightness(40%);
+  }
+  .rightReserved img:hover{
+    filter: brightness(100%);
   }
   .links{
     justify-items: center;
@@ -60,5 +64,8 @@ export default {
     text-decoration: none;
     color: rgb(0, 153, 255);
     margin-left: 40px;
+  }
+  .links a:hover{
+    text-decoration: underline;
   }
 </style>

@@ -5,18 +5,18 @@
   </div>
 
   <div>
-    <sub-navbar/>
+    <site-nav/>
   </div>
 
-  <section>
-    <div>
+  <div class="sections flexDisplayWrap">
+    <section>
+      <site-section/>
+    </section>
 
-    </div>
-  </section>
-
-  <aside>
-    <site-aside/>
-  </aside>
+    <aside>
+      <site-aside/>
+    </aside>
+  </div>
 
   <footer>
     <site-footer/>
@@ -26,17 +26,18 @@
 
 <script>
 import siteHeader from "./components/siteHeader.vue";
-import subNavbar from "./components/subNavbar.vue";
+import siteNav from "./components/siteNav.vue";
 import siteFooter from "./components/siteFooter.vue";
 import siteAside from "./components/siteAside.vue";
-
+import siteSection from "./components/siteSection.vue"
 export default {
   name: 'App',
   components: {
    siteHeader,
-   subNavbar,
+   siteNav,
    siteFooter,
    siteAside,
+   siteSection,
   }
 }
 </script>
@@ -57,5 +58,13 @@ export default {
   body{
     background-color: rgb(16, 19, 24);
   }
-  
+  .sections{
+    margin-left: 25px;
+    justify-content: space-around;
+  }
+  .img{
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(229, 255, 0);
+  }
 </style>

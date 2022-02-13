@@ -60,17 +60,17 @@ export default {
 </script>
 
 <style scoped>
-  .main{
-   
+  .main{  
     justify-content:flex-start;
     align-items: center;
-    max-width: 300px;
+    width: 300px;
+    background-color: red;
   }
   .spaceBetween{
     justify-content: space-between;
   }
   .aside{
-    margin: 30px 20px;
+    margin: 5px 20px;
   }
   .about div, .releases p, .packages p, .languages p{
     padding-top:10px;
@@ -81,11 +81,6 @@ export default {
   }
   .asideButtons p{
     margin-left: 10px;
-  }
-  .img{
-    width: 15px;
-    height: 15px;
-    border: 1px solid rgb(229, 255, 0);
   }
   div h3{
     font-size: 18px;

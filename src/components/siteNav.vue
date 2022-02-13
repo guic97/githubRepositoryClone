@@ -66,7 +66,7 @@
 
 <script>
 export default {
-  name:'subNavbar',
+  name:'siteNav',
 }
 </script>
 
@@ -150,10 +150,5 @@ export default {
   }
   .subNavbar img{
     margin-right: 5px;
-  }
-  .img{
-    width: 15px;
-    height: 15px;
-    border: 1px solid rgb(229, 255, 0);
   }
 </style>

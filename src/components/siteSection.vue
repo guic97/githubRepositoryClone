@@ -3,49 +3,55 @@
     <section class="section">
       <div class="topButtons flexDisplayWrap">
         <div class="leftButtons flexDisplayWrap">
-            <div>
-                <div><img class='img' src="../assets/star.png"></div>
-                <div><p>master</p></div>
-            </div>
-            <div>
-                <div><img class='img' src="../assets/star.png"></div>
-                <div><p>1 branch</p></div>
-            </div>
-            <div>
-                <div><img class='img' src="../assets/star.png"></div>
-                <div><p>0 tags</p></div>
-            </div>
+          <div class="button">
+            <div><img class='img' src="../assets/star.png"></div>
+            <div><p>master</p></div>
+          </div>
+          <div class="buttonTwo">
+            <div><img class='img' src="../assets/star.png"></div>
+            <h3>1 branch</h3>
+          </div>
+          <div class="buttonTwo">
+            <div><img class='img' src="../assets/star.png"></div>
+            <h3>0 tags</h3>
+          </div>
         </div>
         <div class="rightButtons flexDisplayWrap">
-            <div class="button">
-                <img class="img" src="../assets/star.png" >
-                <p>Go to file</p>
-            </div>
-            <div class="button">
-                <img class="img" src="../assets/star.png" >
-                <p>Add file</p>
-            </div>
-            <div class="button">
-                <img class="img" src="../assets/star.png" >
-                <p>Code</p>
-            </div>
+          <div class="button">
+            <p>Go to file</p>
+          </div>
+          <div class="button">
+            <p>Add file</p>
+          </div>
+          <div id='codeButton' class="button">
+            <p>Code</p>
+          </div>
         </div>
       </div>
       <div class="repository">
-        <div class="repositoryName">
-          <div class="leftContent">
-            <div></div>
+        <div class="repositoryName flexDisplayWrap">
+          <div class="leftContent flexDisplayWrap">
+            <div class="photoDiv flexDisplayWrap">
+              <a href="#" ><img src="../assets/foto.jpg"></a>
+            </div>
+            <div>
+              <a href="#">guic97</a>
+            </div>
+            <div>
+              <a href="#">current commit</a>
+            </div>
           </div>
-          <div class="rightContent">
+          <div class="rightContent flexDisplayWrap">
             <div>
-                <p>9c37473</p>
+              <p>9c37473</p>
             </div>
             <div>
-                <p>1 day ago</p>
+              <p>1 day ago</p>
             </div>
-            <div>
-              <div><img class='img' src="../assets/star.png"></div>
-              <div><p>6 commits</p></div>
+            <div class="flexDisplayWrap">
+              <div><img class='img flexDisplayWrap' src="../assets/star.png"></div>
+              <div>5</div>
+              <p>commits</p>
             </div>
           </div>
         </div>
@@ -74,9 +80,11 @@ export default {
 <style scoped>
   .main{
     max-width: 1000px;
-    background-color: blue;
     align-items: center;
     justify-content: flex-start;
+  }
+  .flexDisplayWrap{
+    align-items: center;
   }
   section{
     padding: 30px 20px;
@@ -85,11 +93,80 @@ export default {
   .leftButtons div, .rightButtons div{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 8px;
   }
-  .topButtons{
+  .leftButtons h3{
+    margin-right: 4px;
+  }
+  .topButtons, .topButtons div, .repositoryName {
     justify-content: space-between;
   }
-  .topButtons div{
-    justify-content: space-between;
+  .button{
+    background-color: rgb(38, 38, 53);
+    padding: 6px 15px;
+    border-radius: 8px;
+    color: blanchedalmond;
+    border: 1px solid #444;
+    font-weight: bold;
+  }
+  .button:hover{
+    background-color: rgb(56, 56, 77);
+    border-color: #888;
+  }
+  #codeButton{
+    background-color: rgba(0, 255, 13, 0.678);
+    padding: 5px 20px;
+  }
+  #codeButton:hover{
+    background-color: rgba(0, 255, 13, 0.733);
+  }
+  .buttonTwo div{
+    color:#888;
+  }
+  .buttonTwo img:hover{
+    background-color: rgb(0, 153, 255);
+  }
+  a img{
+    width: 25px;
+    border: 1px solid #555;
+    border-radius: 30px;
+  }
+  .repository{
+    background-color: rgb(16, 19, 24);
+    border: 1px solid #333;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+  .repositoryName{
+    border-radius: 5px;
+    padding: 15px 0;
+    background-color: rgba(38, 38, 53, 0.383);
+  }
+  .leftContent{
+    margin-left: 12px;
+    align-items:center;
+  }
+  .leftContent a{
+    text-decoration: none;
+  }
+  .leftContent a:hover, .rightContent p:hover, .buttonTwo h3:hover{
+    cursor: pointer;
+    color: rgb(0, 153, 255);
+  }
+
+  .leftContent a:hover, .rightContent p:hover{
+    text-decoration: underline;
+  }
+  .rightContent{
+    margin-right: 12px;
+  }
+  .rightContent p{
+    color: rgba(255, 255, 255, 0.479);
+  }
+  .leftContent div, .rightContent div{
+    margin-right: 5px;
+  }
+  .photoDiv{
+    margin-top: 4px;
   }
 </style>

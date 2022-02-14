@@ -64,7 +64,6 @@ export default {
     justify-content:flex-start;
     align-items: center;
     width: 300px;
-    background-color: red;
   }
   .spaceBetween{
     justify-content: space-between;

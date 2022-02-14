@@ -60,11 +60,12 @@ export default {
   }
   .sections{
     margin-left: 25px;
-    justify-content: space-around;
+    justify-content: center;
   }
   .img{
     width: 15px;
     height: 15px;
-    border: 1px solid rgb(229, 255, 0);
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #666;
   }
 </style>

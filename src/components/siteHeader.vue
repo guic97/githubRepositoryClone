@@ -54,7 +54,7 @@ export default {
     align-items: center;
   }
   a img{
-    width: 32px
+    width: 32px;
   }
   a img:hover{
     filter:brightness(70%);
@@ -80,5 +80,6 @@ export default {
   #profilePhoto{
     border: 1px solid #555;
     border-radius: 30px;
+    width: 20px;
   }
 </style>

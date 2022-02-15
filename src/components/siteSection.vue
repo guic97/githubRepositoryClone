@@ -7,13 +7,13 @@
             <div><img class='img' src="../assets/star.png"></div>
             <div><p>master</p></div>
           </div>
-          <div class="buttonTwo">
-            <div><img class='img' src="../assets/star.png"></div>
-            <h3>1 branch</h3>
+          <div class="buttonTwo flexDisplayWrap">
+            <div><img class='img' src="../assets/star.png"><h3>1</h3></div>
+            <p>branch</p>
           </div>
-          <div class="buttonTwo">
-            <div><img class='img' src="../assets/star.png"></div>
-            <h3>0 tags</h3>
+          <div class="buttonTwo flexDisplayWrap">
+            <div><img class='img' src="../assets/star.png"><h3>0</h3></div>
+            <p>tags</p>
           </div>
         </div>
         <div class="rightButtons flexDisplayWrap">
@@ -55,16 +55,26 @@
             </div>
           </div>
         </div>
-        <div>
-          <p>Imagine a table here</p>
+        <div class="tableBody">
+          <div class="tableLine flexDisplayWrap">
+            <div class="tableFirstLine flexDisplayWrap"><img class='img' src="../assets/star.png"><p>file name</p></div>
+            <div><p>commit name</p></div>
+            <div><p>commit date</p></div>
+          </div>
+          <div class="tableLine flexDisplayWrap">
+            <div class="tableFirstLine flexDisplayWrap"><img class='img' src="../assets/star.png"><p>file name</p></div>
+            <div><p>commit name</p></div>
+            <div><p>commit date</p></div>
+          </div>
         </div>
       </div>
       <div class="readMe">
-        <div class="readMeName">
-          <p>Name.md</p>
+        <div class="readMeName flexDisplayWrap">
+          <p>README.md</p>
+          <div><img class='img' src="../assets/star.png"></div>
         </div>
         <div class="readMeContent">
-          <p>Something here</p>
+          <p>GitHub clone by guic97</p>
         </div>
       </div>
     </section>
@@ -82,12 +92,13 @@ export default {
     max-width: 1000px;
     align-items: center;
     justify-content: flex-start;
+    color: white;
   }
   .flexDisplayWrap{
     align-items: center;
   }
   section{
-    padding: 30px 20px;
+    padding: 30px 10px;
     width: 900px;
   }
   .leftButtons div, .rightButtons div{
@@ -95,10 +106,7 @@ export default {
     flex-wrap: wrap;
     margin-right: 8px;
   }
-  .leftButtons h3{
-    margin-right: 4px;
-  }
-  .topButtons, .topButtons div, .repositoryName {
+  .topButtons, .topButtons div, .repositoryName{
     justify-content: space-between;
   }
   .button{
@@ -120,18 +128,24 @@ export default {
   #codeButton:hover{
     background-color: rgba(0, 255, 13, 0.733);
   }
-  .buttonTwo div{
-    color:#888;
+  .buttonTwo{
+    margin: 0px;
+    padding: auto;
+    justify-items: center;
+    align-content: center;
   }
-  .buttonTwo img:hover{
-    background-color: rgb(0, 153, 255);
+  .buttonTwo h3{
+    margin-left: 5px;
+  }
+  .buttonTwo:hover{
+    color: rgb(0, 153, 255);
   }
   a img{
     width: 25px;
     border: 1px solid #555;
     border-radius: 30px;
   }
-  .repository{
+  .repository, .readMe{
     background-color: rgb(16, 19, 24);
     border: 1px solid #333;
     margin: 15px 0;
@@ -148,19 +162,17 @@ export default {
   }
   .leftContent a{
     text-decoration: none;
+    color:rgba(255, 255, 255, 0.856);
   }
-  .leftContent a:hover, .rightContent p:hover, .buttonTwo h3:hover{
+  .leftContent a:hover, .rightContent p:hover, .tableLine div:hover{
     cursor: pointer;
     color: rgb(0, 153, 255);
-  }
-
-  .leftContent a:hover, .rightContent p:hover{
     text-decoration: underline;
   }
   .rightContent{
     margin-right: 12px;
   }
-  .rightContent p{
+  .rightContent p, .buttonTwo p{
     color: rgba(255, 255, 255, 0.479);
   }
   .leftContent div, .rightContent div{
@@ -168,5 +180,32 @@ export default {
   }
   .photoDiv{
     margin-top: 4px;
+  }
+  .tableLine{
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding: 8px 0;
+  }
+  .tableLine div{
+    margin: 0 20px;
+  }
+  .tableLine:hover{
+    background-color: rgb(33, 31, 43);
+  }
+  .tableFirstLine p{
+    margin-left: 20px;
+  }
+  .readMeName{
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+    color: rgba(240, 255, 255, 0.637);
+  }
+  .readMeContent{
+    padding: 30px;
+  }
+  .readMeContent p{
+    font-size: 30px;
   }
 </style>

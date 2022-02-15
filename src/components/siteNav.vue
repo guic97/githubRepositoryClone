@@ -77,7 +77,7 @@ export default {
     border-bottom: 2px solid #222;
   }
   .top{
-    padding-top: 20px;
+    padding-top: 16px;
     justify-content: space-between;
     align-content: center;
   }
@@ -132,7 +132,7 @@ export default {
     border-color: #888;
   }
   .subNavbar{
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: 30px;
   }
   .subNavbar div{

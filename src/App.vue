@@ -49,7 +49,6 @@ export default {
     list-style: none;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     font-size: 14px;
-    color: white;
   }
   .flexDisplayWrap{
     display: flex;
@@ -59,8 +58,9 @@ export default {
     background-color: rgb(16, 19, 24);
   }
   .sections{
-    margin-left: 25px;
-    justify-content: center;
+    margin-left: 35px;
+    justify-items: center;
+    padding-bottom: 50px;
   }
   .img{
     width: 15px;

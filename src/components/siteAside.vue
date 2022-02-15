@@ -47,7 +47,7 @@
         <div class='space'></div>
         <div class="languages">
           <h3>Languages</h3>
-          <p>Soon...</p>
+          <p>No linguages used</p>
         </div>
       </div>
   </div>
@@ -63,13 +63,13 @@ export default {
   .main{  
     justify-content:flex-start;
     align-items: center;
-    width: 300px;
+    width: 370px;
   }
   .spaceBetween{
     justify-content: space-between;
   }
   .aside{
-    margin: 5px 20px;
+    margin: 5px 10px;
   }
   .about div, .releases p, .packages p, .languages p{
     padding-top:10px;
@@ -82,7 +82,8 @@ export default {
     margin-left: 10px;
   }
   div h3{
-    font-size: 18px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.671);
   }
   div a{
     text-decoration: none;
@@ -110,6 +111,6 @@ export default {
     font-style: italic;
   }
   .description p{
-    font-size: 18px;
+    font-size: 17px;
   }
 </style>

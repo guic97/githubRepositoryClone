@@ -1,8 +1,9 @@
 # site_clone
 
 - I'm trying to clone my repository on github. Trying to be more igual possible.
+- The objetive of this project are to practice CSS flexbox and div positions.
 
-- Using HTML5, JS and Vue.js.
+- Using HTML5, CSS, JS and Vue.js.
 
 - First step: Making the header.
 - Second step: Making the navbar.

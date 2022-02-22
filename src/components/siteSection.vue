@@ -1,6 +1,6 @@
 <template>
-  <div class="main flexDisplayWrap">
-    <section class="section">
+  <div class="main">
+    <section class="section flexDisplayWrap">
       <div class="topButtons flexDisplayWrap">
         <div class="leftButtons flexDisplayWrap">
           <div class="button">
@@ -89,17 +89,19 @@ export default {
 
 <style scoped>
   .main{
-    max-width: 1000px;
-    align-items: center;
-    justify-content: flex-start;
-    color: white;
+    background-color: aqua;
+    max-width: 900px;
+    min-width: 420px;
   }
   .flexDisplayWrap{
     align-items: center;
   }
   section{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    color: white;
     padding: 30px 10px;
-    width: 900px;
   }
   .leftButtons div, .rightButtons div{
     display: flex;
@@ -146,6 +148,7 @@ export default {
     border-radius: 30px;
   }
   .repository, .readMe{
+    width: 100%;
     background-color: rgb(16, 19, 24);
     border: 1px solid #333;
     margin: 15px 0;
@@ -207,5 +210,10 @@ export default {
   }
   .readMeContent p{
     font-size: 30px;
+  }
+  @media screen and (max-width:620px){
+    .leftButtons > div:nth-child(2n), .leftButtons > div:nth-child(3n){
+      display: none;
+    }
   }
 </style>

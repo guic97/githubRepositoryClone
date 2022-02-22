@@ -1,22 +1,23 @@
 <template>
-  <header class='header'>
-    <nav>
-      <ul id="leftNav">          
+  <header class='header flexDisplayWrap'>
+    <nav class='flexDisplayWrap'>
+      <ul class='flexDisplayWrap' id="leftNav">
+        <li><div id="menu">Menu</div></li>
         <li><a href="#"><img src="../assets/icon.png"></a></li>
-        <li><input type="text" placeholder="Search or jump to..."></li>
-        <ul>
-          <li><a href="#">Pull requests</a></li>
+        <ul class='flexDisplayWrap'>
+          <li><input type="text" placeholder="Search or jump to..."></li>
+          <li><a href="#">Pull</a></li>
           <li><a href="#">Issues</a></li>
           <li><a href="#">Marketplace</a></li>
           <li><a href="#">Explore</a></li>
         </ul>
       </ul>
-    </nav>
-    <nav>
-      <ul id="rightNav">
+      <ul class='flexDisplayWrap' id="rightNav">
         <li><a href="#">Sino</a></li>
-        <li><a href="#"><h1>+</h1></a></li>
-        <li><a href="#" ><img src="../assets/foto.jpg" id="profilePhoto"></a></li>
+        <ul class='flexDisplayWrap'>
+          <li><a href="#"><h1>+</h1></a></li>
+          <li><a href="#" ><img src="../assets/foto.jpg" id="profilePhoto"></a></li>
+        </ul>
       </ul>
     </nav>
   </header>
@@ -25,25 +26,16 @@
 <script>
 export default {
   name:"siteHeader",
-  data(){
-    return{
-      
-    }
-  }
 }
 </script>
 
 <style scoped>
+  
   header{
     background-color: rgb(25, 30, 37);
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-  }
-  nav ul{
-    display: flex;
   }
   ul li, ul a{
     margin-right: 12px;
@@ -56,6 +48,10 @@ export default {
   a img{
     width: 32px;
   }
+  nav {
+    justify-content: space-between;
+    width: 100%;
+  }
   a img:hover{
     filter:brightness(70%);
   }
@@ -66,7 +62,7 @@ export default {
     color: rgb(190, 189, 189);
   }
   #leftNav:first-child{
-    margin-left: 15px;
+    margin-left: 5px;
   }
   input{
     color:white;
@@ -75,11 +71,25 @@ export default {
     padding: 4px 0;
     padding-left: 12px;
     border: 1px solid rgb(58, 57, 57);
-    width: 250px;
   }
   #profilePhoto{
     border: 1px solid #555;
     border-radius: 30px;
     width: 20px;
+  }
+  #menu{
+    display: none;
+  }
+  @media screen and (max-width:768px){
+    nav ul ul{
+      display: none;
+    }
+    #menu{
+      display: block;
+    }
+    nav #leftNav{
+      width: 55%;
+      justify-content: space-between;
+    }
   }
 </style>

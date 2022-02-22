@@ -63,7 +63,6 @@ export default {
   .main{  
     justify-content:flex-start;
     align-items: center;
-    width: 370px;
   }
   .spaceBetween{
     justify-content: space-between;
@@ -112,5 +111,10 @@ export default {
   }
   .description p{
     font-size: 17px;
+  }
+  @media screen and (max-width: 768px) {
+    .aside{
+      display: none;
+    }
   }
 </style>

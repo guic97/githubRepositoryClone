@@ -8,6 +8,14 @@
         <div><a href="">site_clone</a></div>
         <div id="repositoryStatus">Public</div>
       </div>
+      <div id="shortScreenButtons">
+        <div>
+          <div class="button"><img class="img" src="../assets/star.png" >Star (0)</div>
+        </div>
+        <div>
+          <div class="button"><img class="img" src="../assets/star.png" >Unwatch (1)</div>
+        </div>
+      </div>
       <div class="rightButtons flexDisplayWrap">
         <div>
           <div class="button"><img class="img" src="../assets/star.png" >Pin</div>
@@ -151,4 +159,47 @@ export default {
   .subNavbar img{
     margin-right: 5px;
   }
+  #shortScreenButtons{
+    display: none;
+  }
+  @media screen and (max-width:1000px){
+    .subNavbar > div:nth-child(9n){
+      display: none;
+    }
+  }
+  @media screen and (max-width:900px){
+    .subNavbar > div:nth-child(8n){
+      display: none;
+    }
+  }
+  @media screen and (max-width:800px){
+    .subNavbar > div:nth-child(7n){
+      display: none;
+    }
+  }
+  @media screen and (max-width:720px){
+    .subNavbar > div:nth-child(6n){
+      display: none;
+    }
+    .rightButtons{
+      display:none;
+    }
+    #shortScreenButtons{
+    display: flex;
+  }
+  }
+  @media screen and (max-width:580px){
+    .subNavbar > div:nth-child(5n){
+      display: none;
+    }
+  }
+  @media screen and (max-width:550px){
+    .subNavbar > div:nth-child(5n){
+      display: block;
+    }
+    .subNavbar > div > img{
+      display:none;
+    }
+  }
+  
 </style>

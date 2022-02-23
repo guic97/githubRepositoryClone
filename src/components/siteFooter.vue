@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="footer flexDisplayWrap">
-      <div class="rightReserved flexDisplayWrap">
+      <div class="notHidden rightReserved flexDisplayWrap">
         <div><a href="#"><img src="../assets/icon.png" ></a></div>
         <div><p>&copy; 2022 GitHub, Inc.</p></div>
       </div>
@@ -18,7 +18,11 @@
         <div><a href="#">Blog</a></div>
         <div><a href="#">About</a></div>
       </div>
-    </div>
+      <div class="hiddenRightReserved rightReserved flexDisplayWrap">
+        <div><a href="#"><img src="../assets/icon.png" ></a></div>
+        <div><p>&copy; 2022 GitHub, Inc.</p></div>
+      </div>
+    </div> 
   </div>
 </template>
 
@@ -31,12 +35,16 @@ export default {
 <style scoped>
   .main{
     width: 100%;
+    padding-bottom: 50px;
+    
   }
   .footer{
-    align-content: center;
+    max-width: 1280px;
     align-items: center;
-    margin: 0 50px;
-    padding: 50px 0;
+    justify-content: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
     border-top: 1px solid #333;
   }
   .rightReserved{
@@ -49,24 +57,41 @@ export default {
   .rightReserved div{
     margin-left: 10px;
   }
-  .rightReserved img{
-    height: 25px;
-    filter: brightness(40%);
-  }
-  .rightReserved img:hover{
-    filter: brightness(100%);
-  }
   .links{
-    justify-items: center;
-    margin-left: 25px;
+    margin: 0 25px;
     justify-content: center;
+    margin-bottom: 15px;
   }
   .links a{
     text-decoration: none;
     color: rgb(0, 153, 255);
-    margin-left: 40px;
+    margin-left: 30px;
+    font-size: 12px;
+  }
+  img{
+    height: 25px;
+    filter: brightness(40%);
+  }
+  .hiddenRightReserved{
+    display: none;
+    justify-content: center;
+  }
+  .rightReserved img:hover{
+    filter: brightness(100%);
   }
   .links a:hover{
     text-decoration: underline;
+  }
+  @media screen and (max-width:1012px) {
+    .notHidden{
+      display: none;
+    }
+    .footer{
+      display: block;
+
+    }
+    .hiddenRightReserved{
+      display: flex;
+    }
   }
 </style>

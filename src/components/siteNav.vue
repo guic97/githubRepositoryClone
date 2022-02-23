@@ -8,14 +8,7 @@
         <div><a href="">site_clone</a></div>
         <div id="repositoryStatus">Public</div>
       </div>
-      <div id="shortScreenButtons">
-        <div>
-          <div class="button"><img class="img" src="../assets/star.png" >Star (0)</div>
-        </div>
-        <div>
-          <div class="button"><img class="img" src="../assets/star.png" >Unwatch (1)</div>
-        </div>
-      </div>
+      
       <div class="rightButtons flexDisplayWrap">
         <div>
           <div class="button"><img class="img" src="../assets/star.png" >Pin</div>
@@ -29,6 +22,16 @@
         <div>
           <div class="button"><img class="img" src="../assets/star.png" >Star (0)</div>
         </div>
+      </div>
+    </div>
+    <div class="shortScreenButtons">
+      <div class="shortButtonsTop flexDisplayWrap">
+          <div><img class="img" src="../assets/star.png" >0 stars</div>
+          <div><img class="img" src="../assets/star.png" >1 forks</div>
+      </div>
+      <div class="shortButtonsBottom flexDisplayWrap">
+          <div class="flexButton"><img class="img" src="../assets/star.png" >Star (0)</div>
+          <div class="flexButton"><img class="img" src="../assets/star.png" >Unwatch (1)</div>
       </div>
     </div>
     <div class="subNavbar flexDisplayWrap">
@@ -81,7 +84,7 @@ export default {
 <style scoped>
   #subnavDiv{ 
     max-height: 400px;
-    max-width: 100%;
+    width: 100%;
     border-bottom: 2px solid #222;
   }
   .top{
@@ -95,7 +98,7 @@ export default {
     margin-left: 30px;
   }
   .leftLinks a{
-    color: rgb(0, 153, 255);
+    color: rgb(76, 170, 233);
     font-size: 20px;
     text-decoration: none;
     
@@ -135,7 +138,7 @@ export default {
     color: blanchedalmond;
     border: 1px solid #444;
   }
-  .button:hover{
+  .button:hover, .flexButton:hover{
     background-color: rgb(56, 56, 77);
     border-color: #888;
   }
@@ -156,11 +159,49 @@ export default {
   .subNavbar div:hover{
     border-bottom: 2px solid rgb(71, 70, 70);
   }
-  .subNavbar img{
+  .img{
     margin-right: 5px;
   }
-  #shortScreenButtons{
+  .shortButtonsTop{
+    margin: 0 20px;
+    color: rgba(255, 255, 255, 0.712);
+  }
+  .shortButtonsTop div{
+    margin-right: 15px;
+    transition: .3s;
+  }
+  .shortButtonsTop div:hover{
+    color: rgba(45, 171, 255, 0.877);
+    cursor: pointer;
+  }
+  .shortButtonsBottom div{
+    margin: 0 3px;
+    width: 46%;
+    display: flex;
+  }
+  .shortScreenButtons{
+    width: 100%;
     display: none;
+    flex-direction: column;
+  }
+  .shortScreenButtons div{
+    margin-top: 5px;
+    
+  }
+  .shortScreenButtons > div:nth-child(2n){
+    display: flex;
+    justify-content: center;
+  }
+  .flexButton{
+    display: flex;
+    background-color: rgb(38, 38, 53);
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: bold;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    cursor: pointer;
   }
   @media screen and (max-width:1000px){
     .subNavbar > div:nth-child(9n){
@@ -177,15 +218,17 @@ export default {
       display: none;
     }
   }
-  @media screen and (max-width:720px){
-    .subNavbar > div:nth-child(6n){
-      display: none;
-    }
+  @media screen and (max-width:770px){
     .rightButtons{
       display:none;
     }
-    #shortScreenButtons{
+    .shortScreenButtons{
       display: flex;
+    }
+  }
+  @media screen and (max-width:720px){
+    .subNavbar > div:nth-child(6n){
+      display: none;
     }
   }
   @media screen and (max-width:580px){

@@ -92,11 +92,7 @@ export default {
   div a:hover{
     text-decoration: underline;
   }
-  .releases h3:hover, .packages h3:hover{
-    color: rgb(29, 161, 248);
-    cursor: pointer;
-  }
-  .img:hover, .asideButtons p:hover{
+  .releases h3:hover, .packages h3:hover, img:hover, .asideButtons p:hover{
     color: rgb(29, 161, 248);
     cursor: pointer;
   }

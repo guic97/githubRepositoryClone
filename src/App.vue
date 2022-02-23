@@ -1,27 +1,29 @@
 <template>
-<div class="body">
-  <div>
-    <site-header/>
-  </div>
+  <main class="body">
 
-  <div>
-    <site-nav/>
-  </div>
+    <div class="header">
+      <header>
+        <site-header/>
+      </header>
+      <nav>
+        <site-nav/>
+      </nav>
+    </div>
 
-  <div class="sections">
-    <section>
-      <site-section/>
-    </section>
+    <div class="sections">
+      <section>
+        <site-section/>
+      </section>
+      <aside>
+        <site-aside/>
+      </aside>
+    </div>
 
-    <aside>
-      <site-aside/>
-    </aside>
-  </div>
+    <footer>
+      <site-footer/>
+    </footer>
 
-  <footer>
-    <site-footer/>
-  </footer>
-</div>
+  </main>
 </template>
 
 <script>
@@ -29,7 +31,8 @@ import siteHeader from "./components/siteHeader.vue";
 import siteNav from "./components/siteNav.vue";
 import siteFooter from "./components/siteFooter.vue";
 import siteAside from "./components/siteAside.vue";
-import siteSection from "./components/siteSection.vue"
+import siteSection from "./components/siteSection.vue";
+
 export default {
   name: 'App',
   components: {
@@ -54,16 +57,16 @@ export default {
     display: flex;
     flex-wrap: wrap;
   }
-  body{
+  main{
     background-color: rgb(16, 19, 24);
   }
   .sections{
+    
     display: flex;
     flex-direction: row;
-    margin-left: 35px;
-    justify-items: center;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    margin: auto;
+    padding: 0 32px;
+    padding-bottom: 32px;
   }
   .img{
     width: 15px;
@@ -75,6 +78,11 @@ export default {
   @media screen and (max-width: 768px) {
     aside{
       display: none;
+    }
+  }
+  @media screen and (max-width:1000px){
+    .sections{
+      padding: 0 20px;
     }
   }
 </style>

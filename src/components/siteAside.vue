@@ -60,9 +60,10 @@ export default {
 </script>
 
 <style scoped>
-  .main{  
+  .main{
     justify-content:flex-start;
     align-items: center;
+    min-width: 310px;
   }
   .spaceBetween{
     justify-content: space-between;
@@ -111,10 +112,5 @@ export default {
   }
   .description p{
     font-size: 17px;
-  }
-  @media screen and (max-width: 768px) {
-    .aside{
-      display: none;
-    }
   }
 </style>

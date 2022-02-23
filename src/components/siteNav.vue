@@ -185,8 +185,8 @@ export default {
       display:none;
     }
     #shortScreenButtons{
-    display: flex;
-  }
+      display: flex;
+    }
   }
   @media screen and (max-width:580px){
     .subNavbar > div:nth-child(5n){

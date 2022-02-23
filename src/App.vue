@@ -8,7 +8,7 @@
     <site-nav/>
   </div>
 
-  <div class="sections flexDisplayWrap">
+  <div class="sections">
     <section>
       <site-section/>
     </section>
@@ -58,8 +58,11 @@ export default {
     background-color: rgb(16, 19, 24);
   }
   .sections{
+    display: flex;
+    flex-direction: row;
     margin-left: 35px;
     justify-items: center;
+    padding-right: 50px;
     padding-bottom: 50px;
   }
   .img{
@@ -67,5 +70,11 @@ export default {
     height: 15px;
     border: 1px solid rgb(0, 0, 0);
     background-color: #666;
+  }
+  
+  @media screen and (max-width: 768px) {
+    aside{
+      display: none;
+    }
   }
 </style>

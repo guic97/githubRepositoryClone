@@ -59,6 +59,7 @@ export default {
   .links{
     justify-items: center;
     margin-left: 25px;
+    justify-content: center;
   }
   .links a{
     text-decoration: none;

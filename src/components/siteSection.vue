@@ -49,7 +49,7 @@
               <p>1 day ago</p>
             </div>
             <div class="flexDisplayWrap">
-              <div><img class='img flexDisplayWrap' src="../assets/star.png"></div>
+              <img class='img flexDisplayWrap' src="../assets/star.png">
               <div>5</div>
               <p>commits</p>
             </div>
@@ -89,7 +89,6 @@ export default {
 
 <style scoped>
   .main{
-    background-color: aqua;
     max-width: 900px;
     min-width: 420px;
   }
@@ -97,8 +96,6 @@ export default {
     align-items: center;
   }
   section{
-    display: flex;
-    flex-wrap: wrap;
     max-width: 100%;
     color: white;
     padding: 30px 10px;
@@ -107,6 +104,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-right: 8px;
+  }
+  .topButtons{
+    width: 100%;
   }
   .topButtons, .topButtons div, .repositoryName{
     justify-content: space-between;
@@ -211,8 +211,9 @@ export default {
   .readMeContent p{
     font-size: 30px;
   }
-  @media screen and (max-width:620px){
-    .leftButtons > div:nth-child(2n), .leftButtons > div:nth-child(3n){
+  
+  @media screen and (max-width:1000px){
+    .leftButtons > div:nth-child(2n), .leftButtons > div:nth-child(3n), .rightContent div:first-child{
       display: none;
     }
   }

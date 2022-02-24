@@ -36,11 +36,10 @@ export default {
   .main{
     width: 100%;
     padding-bottom: 50px;
-    
   }
   .footer{
     max-width: 1280px;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     margin: auto;
     padding-top: 40px;
@@ -60,7 +59,7 @@ export default {
   .links{
     margin: 0 25px;
     justify-content: center;
-    margin-bottom: 15px;
+    align-items: center;
   }
   .links a{
     text-decoration: none;
@@ -75,6 +74,7 @@ export default {
   .hiddenRightReserved{
     display: none;
     justify-content: center;
+    margin-top: 15px;
   }
   .rightReserved img:hover{
     filter: brightness(100%);
@@ -88,7 +88,6 @@ export default {
     }
     .footer{
       display: block;
-
     }
     .hiddenRightReserved{
       display: flex;

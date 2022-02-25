@@ -10,3 +10,5 @@
 - Third step: Making the footer.
 - Forth step: Making the aside.
 - Fifth step: Making the main section.
+- Sixth step: Starting to make it responsive.
+- Seventh step: Finish the project. For a while.

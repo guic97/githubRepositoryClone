@@ -1,7 +1,7 @@
 # site_clone
 
-- I'm trying to clone my repository on github. Trying to be more igual possible.
-- The objetive of this project are to practice CSS flexbox and div positions.
+- I'm trying to clone my repository on github. Trying to be more iqual possible.
+- The objetive of this project is practice CSS flexbox and div positions.
 
 - Using HTML5, CSS, JS and Vue.js.
 

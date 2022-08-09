@@ -30,7 +30,6 @@ export default {
 </script>
 
 <style scoped>
-  
   header{
     background-color: rgb(25, 30, 37);
     justify-content: space-between;

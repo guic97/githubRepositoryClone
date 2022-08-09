@@ -104,6 +104,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-right: 8px;
+    align-items: center;
   }
   .topButtons{
     width: 100%;
@@ -174,6 +175,10 @@ export default {
   }
   .rightContent{
     margin-right: 12px;
+    align-items: center;
+  }
+  .rightContent div > img{
+    margin: 0 5px;
   }
   .rightContent p, .buttonTwo p{
     color: rgba(255, 255, 255, 0.479);
@@ -191,6 +196,8 @@ export default {
   }
   .tableLine div{
     margin: 0 20px;
+    display: flex;
+    align-items: center;
   }
   .tableLine:hover{
     background-color: rgb(33, 31, 43);

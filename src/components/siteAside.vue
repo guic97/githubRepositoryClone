@@ -1,6 +1,6 @@
 <template>
   <div class="main flexDisplayWrap">
-      <div class="aside">
+      <div class=" aside">
         <div class="about">
           <div class="spaceBetween flexDisplayWrap">
             <div><h3>About</h3></div>
@@ -70,6 +70,7 @@ export default {
   }
   .aside{
     margin: 5px 10px;
+    padding-bottom: 50px;
   }
   .about div, .releases p, .packages p, .languages p{
     padding-top:10px;
@@ -77,6 +78,7 @@ export default {
   .asideButtons div{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
   .asideButtons p{
     margin-left: 10px;

@@ -1,6 +1,12 @@
 <template>
-  <main class="body">
+  <!--
 
+    npm install -g @vue/cli ( instalar vue )
+    npm install ( instalar o node_modules )
+    npm run serve ( iniciar o vue )
+
+  -->
+  <main class="body">
     <div class="header">
       <header>
         <site-header/>
@@ -10,7 +16,7 @@
       </nav>
     </div>
 
-    <div class="sections">
+    <div class=" sections">
       <section>
         <site-section/>
       </section>
@@ -61,7 +67,6 @@ export default {
     background-color: rgb(16, 19, 24);
   }
   .sections{
-    
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -74,15 +79,9 @@ export default {
     border: 1px solid rgb(0, 0, 0);
     background-color: #666;
   }
-  
   @media screen and (max-width: 768px) {
     aside{
       display: none;
-    }
-  }
-  @media screen and (max-width:1000px){
-    .sections{
-      padding: 0 20px;
     }
   }
 </style>

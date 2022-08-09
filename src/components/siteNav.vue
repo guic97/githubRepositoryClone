@@ -120,6 +120,8 @@ export default {
     border-radius: 15px;
     height: 20px;
     font-size: 12px;
+    display: flex;
+    align-items: center;
   }
   .rightButtons{
     margin-right: 30px;
@@ -127,6 +129,12 @@ export default {
   .rightButtons div{
     margin-right: 5px;
     cursor: pointer;
+  }
+  .rightButtons div,
+  .subNavbar div
+  {
+    display: flex;
+    align-items: center;
   }
   .rightButtons img{
     margin-right: 5px;
